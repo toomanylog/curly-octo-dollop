@@ -155,6 +155,7 @@
         
         .benefits {
             margin-bottom: 30px;
+            grid-column: span 2;
         }
         
         .section-title {
@@ -207,6 +208,9 @@
         
         .process {
             margin-bottom: 30px;
+            grid-column: span 2;
+            position: relative;
+            z-index: 1;
         }
         
         .steps {
@@ -324,6 +328,8 @@
             border-radius: 10px;
             padding: 20px;
             text-align: center;
+            position: relative;
+            z-index: 1;
         }
         
         .bonus h3 {
@@ -443,6 +449,102 @@
             border-radius: 50%;
         }
         
+        .decoration-3 {
+            top: 50%;
+            right: -30px;
+            width: 120px;
+            height: 120px;
+            background-color: rgba(0,167,157,0.08);
+            border-radius: 50%;
+        }
+        
+        .decoration-4 {
+            top: 200px;
+            left: -20px;
+            width: 80px;
+            height: 80px;
+            background-color: rgba(0,167,157,0.1);
+            border-radius: 50%;
+        }
+        
+        .decoration-5 {
+            bottom: 80px;
+            right: -40px;
+            width: 130px;
+            height: 130px;
+            background-color: rgba(0,167,157,0.07);
+            border-radius: 50%;
+        }
+        
+        .decoration-6 {
+            bottom: 300px;
+            right: 20%;
+            width: 60px;
+            height: 60px;
+            background-color: rgba(231,76,60,0.05);
+            border-radius: 50%;
+        }
+        
+        .decoration-7 {
+            top: 630px;
+            left: 35%;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0,167,157,0.1);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .decoration-8 {
+            top: 700px;
+            right: 15%;
+            width: 70px;
+            height: 70px;
+            background-color: rgba(0,167,157,0.08);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .decoration-9 {
+            top: 620px;
+            right: 5%;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(231,76,60,0.07);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .decoration-10 {
+            top: 48%;
+            left: 22%;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(249,190,81,0.15);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .decoration-11 {
+            top: 52%;
+            left: 5%;
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0,167,157,0.1);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .decoration-12 {
+            top: 43%;
+            left: 10%;
+            width: 25px;
+            height: 25px;
+            background-color: rgba(231,76,60,0.08);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .flyer {
@@ -516,8 +618,8 @@
         }
         
         .qr-code {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             background-color: white;
             padding: 10px;
             border-radius: 10px;
@@ -528,11 +630,11 @@
         
         .handwritten-circle {
             position: absolute;
-            top: -15px;
-            left: -15px;
-            width: calc(100% + 30px);
-            height: calc(100% + 30px);
-            border: 4px solid #e74c3c;
+            top: -20px;
+            left: -20px;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            border: 5px solid #e74c3c;
             border-radius: 50%;
             opacity: 0.8;
             z-index: 2;
@@ -671,12 +773,15 @@
         }
         
         .certification-logos {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 30px 0;
-            padding: 25px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            grid-gap: 15px;
+            padding: 25px;
             position: relative;
+            background-color: #f7f9f9;
+            border-radius: 10px;
+            height: 100%;
         }
         
         .certification-logos::before {
@@ -690,22 +795,41 @@
             font-weight: bold;
             font-size: 16px;
             color: #00a79d;
+            z-index: 1;
         }
         
         .certification-logo {
-            height: 85px;
-            transition: all 0.3s ease;
-            padding: 15px 20px;
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            margin: 0 10px;
             border: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            overflow: hidden;
+        }
+        
+        .certification-logo.long {
+            grid-column: span 2;
+            height: 90px;
+        }
+        
+        .certification-logo.square {
+            aspect-ratio: 1/1;
+        }
+        
+        .certification-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
         
         .certification-logo:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            z-index: 2;
         }
         
         .icon-detail {
@@ -736,6 +860,16 @@
         <div class="main-content">
             <div class="decoration decoration-1"></div>
             <div class="decoration decoration-2"></div>
+            <div class="decoration decoration-3"></div>
+            <div class="decoration decoration-4"></div>
+            <div class="decoration decoration-5"></div>
+            <div class="decoration decoration-6"></div>
+            <div class="decoration decoration-7"></div>
+            <div class="decoration decoration-8"></div>
+            <div class="decoration decoration-9"></div>
+            <div class="decoration decoration-10"></div>
+            <div class="decoration decoration-11"></div>
+            <div class="decoration decoration-12"></div>
             
             <!-- Stats Section -->
             <div class="stats">
@@ -815,23 +949,32 @@
                 </div>
             </div>
             
-            <!-- Certification Logos -->
-            <div class="certification-logos">
-                <img src="images/rge.jpg" alt="Certification RGE" class="certification-logo">
-                <img src="images/ade.png" alt="Partenaire ADEME" class="certification-logo">
-                <img src="images/qualibat.jpg" alt="Qualibat" class="certification-logo">
-            </div>
-            
-            <!-- Bonus Section -->
-            <div class="bonus">
-                <div class="electricity-icon" style="font-size: 36px; margin-bottom: 10px; color: #f9be51;">💡</div>
-                <h3>BONUS EXCLUSIF</h3>
-                <p><strong>1 à 6 mois d'électricité OFFERTS</strong> selon l'offre choisie après votre diagnostic</p>
-                <p style="font-size: 12px; color: #666; margin-top: 5px;">Offre applicable sur votre facture auprès de votre fournisseur actuel, sous forme de remboursement</p>
-                <div class="badges">
-                    <span class="badge">1 MOIS</span>
-                    <span class="badge">3 MOIS</span>
-                    <span class="badge">6 MOIS</span>
+            <!-- Bonus and Certifications Row -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; grid-column: span 2; margin-bottom: 30px;">
+                <!-- Bonus Section -->
+                <div class="bonus">
+                    <div class="electricity-icon" style="font-size: 36px; margin-bottom: 10px; color: #f9be51;">💡</div>
+                    <h3>BONUS EXCLUSIF</h3>
+                    <p><strong>1 à 6 mois d'électricité OFFERTS</strong> selon l'offre choisie après votre diagnostic</p>
+                    <p style="font-size: 12px; color: #666; margin-top: 5px;">Offre applicable sur votre facture auprès de votre fournisseur actuel, sous forme de remboursement</p>
+                    <div class="badges">
+                        <span class="badge">1 MOIS</span>
+                        <span class="badge">3 MOIS</span>
+                        <span class="badge">6 MOIS</span>
+                    </div>
+                </div>
+                
+                <!-- Certification Logos -->
+                <div class="certification-logos">
+                    <div class="certification-logo long">
+                        <img src="images/ade.png" alt="Partenaire ADEME">
+                    </div>
+                    <div class="certification-logo square">
+                        <img src="images/rge.jpg" alt="Certification RGE">
+                    </div>
+                    <div class="certification-logo square">
+                        <img src="images/qualibat.jpg" alt="Qualibat">
+                    </div>
                 </div>
             </div>
             
@@ -860,7 +1003,7 @@
                     <div class="handwritten-circle"></div>
                     <div class="handwritten-text">Scannez-moi !</div>
                     <div class="qr-code">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://transitionenergy.fr" alt="QR Code" width="100" height="100">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://transitionenergy.fr" alt="QR Code" width="130" height="130">
                     </div>
                 </div>
             </div>
