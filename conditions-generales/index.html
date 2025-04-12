@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Générales - ETW (ENERGY TRANSITION WORLD)</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00A896;
+            --secondary: #05668D;
+            --accent: #F0B500;
+            --light: #F8F9FA;
+            --dark: #212529;
+            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo-text span {
+            color: var(--secondary);
+        }
+        
+        .back-button {
+            color: var(--secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button i {
+            margin-right: 5px;
+        }
+        
+        .back-button:hover {
+            color: var(--primary);
+        }
+        
+        .content {
+            padding: 60px 0;
+        }
+        
+        .legal-content {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light);
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin: 20px 0 10px;
+        }
+        
+        p, ul, ol {
+            margin-bottom: 15px;
+            color: #495057;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+        }
+        
+        .company-info {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .info-item {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            min-width: 200px;
+        }
+        
+        .info-value {
+            color: #495057;
+        }
+        
+        footer {
+            background: #212529;
+            color: white;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .footer-logo span {
+            color: var(--primary);
+        }
+        
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        
+        .footer-nav a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-nav a:hover {
+            color: white;
+        }
+        
+        .footer-legal {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+        
+        .footer-legal a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-legal a:hover {
+            color: white;
+        }
+        
+        .footer-social {
+            margin-top: 30px;
+        }
+        
+        .social-icon {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            color: white;
+        }
+        
+        .copyright {
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .info-item {
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+            
+            .info-label {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-text">ETW <span>(ENERGY TRANSITION WORLD)</span></div>
+            </div>
+            <a href="/" class="back-button">
+                <i class="fas fa-arrow-left"></i> Retour au site
+            </a>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="content">
+        <div class="container">
+            <div class="legal-content">
+                <h1>Conditions Générales de Vente et d'Utilisation</h1>
+                
+                <div class="company-info">
+                    <div class="info-item">
+                        <div class="info-label">Dénomination sociale :</div>
+                        <div class="info-value">ETW (ENERGY TRANSITION WORLD)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Forme juridique :</div>
+                        <div class="info-value">SASU, société par actions simplifiée unipersonnelle</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Adresse :</div>
+                        <div class="info-value">35 B BOULEVARD BERANGER, 37000 TOURS</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">SIREN :</div>
+                        <div class="info-value">899 069 835</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">SIRET :</div>
+                        <div class="info-value">899 069 835 00010</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Numéro de TVA :</div>
+                        <div class="info-value">FR66899069835</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Capital social :</div>
+                        <div class="info-value">1 000,00 €</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Date de création :</div>
+                        <div class="info-value">30/04/2021</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Dirigeant :</div>
+                        <div class="info-value">BLAITEAU Willy</div>
+                    </div>
+                </div>
+                
+                <h2>1. Préambule</h2>
+                <p>Les présentes conditions générales de vente et d'utilisation (ci-après les "CGVU") sont conclues entre la société ETW (ENERGY TRANSITION WORLD), société par actions simplifiée unipersonnelle au capital de 1 000 euros, immatriculée au Registre du Commerce et des Sociétés de Tours sous le numéro 899 069 835, dont le siège social est situé au 35 B BOULEVARD BERANGER, 37000 TOURS (ci-après "la Société") et toute personne physique ou morale souhaitant bénéficier des services proposés par la Société (ci-après "le Client").</p>
+                
+                <h2>2. Objet</h2>
+                <p>Les présentes CGVU définissent les droits et obligations des parties dans le cadre de la vente des services de diagnostic énergétique proposés par la Société.</p>
+                <p>Toute commande de prestation implique l'acceptation sans réserve par le Client et son adhésion pleine et entière aux présentes CGVU qui prévalent sur tout autre document du Client.</p>
+                
+                <h2>3. Services proposés</h2>
+                <p>La Société propose des services de diagnostic énergétique pour les logements, comprenant :</p>
+                <ul>
+                    <li>L'analyse thermique complète du logement</li>
+                    <li>La détection des fuites d'air</li>
+                    <li>L'évaluation des systèmes de chauffage</li>
+                    <li>L'analyse de la consommation électrique</li>
+                    <li>Un rapport personnalisé détaillé</li>
+                    <li>Des solutions priorisées avec retour sur investissement</li>
+                </ul>
+                
+                <h2>4. Commande et exécution des services</h2>
+                <h3>4.1 Commande</h3>
+                <p>Le Client peut passer commande des services en remplissant le formulaire de contact disponible sur le site internet de la Société ou par tout autre moyen mis à disposition par la Société. La commande n'est définitivement confirmée qu'après validation du paiement.</p>
+                
+                <h3>4.2 Délais et modalités d'exécution</h3>
+                <p>La Société s'engage à proposer un rendez-vous pour la réalisation du diagnostic dans un délai de 14 jours suivant la confirmation de la commande, sous réserve de disponibilité.</p>
+                <p>Le diagnostic énergétique est réalisé par un technicien qualifié et prend environ 30 minutes pour un logement standard, et jusqu'à 45 minutes pour les grandes maisons (plus de 150m²).</p>
+                <p>Le rapport d'analyse complet est remis au Client dans un délai de 48 heures suivant la réalisation du diagnostic.</p>
+                
+                <h2>5. Prix et modalités de paiement</h2>
+                <h3>5.1 Prix</h3>
+                <p>Les prix des services sont indiqués en euros et sont soumis à la TVA au taux en vigueur au jour de la commande. La Société se réserve le droit de modifier ses prix à tout moment, étant entendu que les services seront facturés sur la base des tarifs en vigueur au moment de la confirmation de la commande.</p>
+                
+                <h3>5.2 Modalités de paiement</h3>
+                <p>Le paiement s'effectue en ligne par carte bancaire via un système sécurisé, ou par tout autre moyen proposé par la Société au moment de la commande.</p>
+                
+                <h2>6. Garantie "Économies ou remboursé"</h2>
+                <p>La Société s'engage à identifier au moins 200€ d'économies potentielles annuelles sur les factures d'énergie du Client suite au diagnostic réalisé. Si le rapport ne permet pas d'identifier ces économies potentielles, la Société remboursera intégralement le coût du diagnostic au Client.</p>
+                <p>Pour bénéficier de cette garantie, le Client doit en faire la demande par écrit dans un délai de 30 jours suivant la remise du rapport de diagnostic, en justifiant que les économies potentielles identifiées sont inférieures à 200€ par an.</p>
+                
+                <h2>7. Droit de rétractation</h2>
+                <p>Conformément aux dispositions des articles L.221-18 et suivants du Code de la consommation, le Client consommateur dispose d'un délai de 14 jours à compter de la conclusion du contrat pour exercer son droit de rétractation, sans avoir à justifier de motifs ni à payer de pénalités.</p>
+                <p>Le droit de rétractation peut être exercé en adressant à la Société une déclaration dénuée d'ambiguïté exprimant la volonté de se rétracter, par courrier postal ou électronique.</p>
+                <p>En cas d'exercice du droit de rétractation, la Société remboursera au Client la totalité des sommes versées, au plus tard dans les 14 jours suivant la date à laquelle elle est informée de la décision du Client de se rétracter.</p>
+                
+                <h2>8. Responsabilité</h2>
+                <p>La Société s'engage à mettre en œuvre tous les moyens nécessaires pour fournir les services avec diligence et selon les règles de l'art. Toutefois, sa responsabilité ne saurait être engagée en cas d'inexécution ou de mauvaise exécution due à un cas de force majeure.</p>
+                <p>Les recommandations formulées dans le rapport de diagnostic sont données à titre indicatif et n'engagent pas la responsabilité de la Société quant aux économies réellement réalisées, qui peuvent varier en fonction de nombreux facteurs, notamment les habitudes de consommation du Client et les conditions climatiques.</p>
+                
+                <h2>9. Propriété intellectuelle</h2>
+                <p>Tous les éléments du site internet et des rapports de diagnostic de la Société, qu'ils soient visuels ou sonores, y compris la technologie sous-jacente, sont protégés par le droit d'auteur, le droit des marques ou des brevets. Ils sont la propriété exclusive de la Société ou de ses partenaires.</p>
+                <p>Le Client s'interdit de reproduire, représenter, modifier, publier, adapter, exploiter tout ou partie des éléments du site ou des rapports sans l'autorisation préalable écrite de la Société.</p>
+                
+                <h2>10. Protection des données personnelles</h2>
+                <p>La Société collecte et traite les données personnelles du Client conformément à la réglementation en vigueur, notamment le Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 (RGPD) et la Loi n° 78-17 du 6 janvier 1978 modifiée relative à l'informatique, aux fichiers et aux libertés.</p>
+                <p>Pour plus d'informations sur la collecte et le traitement des données personnelles, le Client est invité à consulter la <a href="/politique-confidentialite/">Politique de Confidentialité</a> accessible sur le site internet de la Société.</p>
+                
+                <h2>11. Médiation et règlement des litiges</h2>
+                <p>En cas de litige, le Client consommateur doit s'adresser en priorité au service client de la Société. En cas d'échec de la demande de réclamation, le Client consommateur peut recourir gratuitement au service de médiation proposé par la Société, en saisissant le médiateur de la consommation compétent dans le secteur d'activité de la Société.</p>
+                <p>À défaut de résolution amiable, tout litige relatif à l'interprétation ou à l'exécution des présentes CGVU sera soumis aux tribunaux français compétents.</p>
+                
+                <h2>12. Droit applicable</h2>
+                <p>Les présentes CGVU sont soumises au droit français.</p>
+                
+                <h2>13. Contact</h2>
+                <p>Pour toute question relative aux présentes CGVU ou aux services proposés par la Société, le Client peut contacter la Société à l'adresse suivante : 35 B BOULEVARD BERANGER, 37000 TOURS, ou par e-mail à l'adresse contact@transitionenergy.fr.</p>
+                
+                <p class="last-update">Dernière mise à jour : 9 avril 2025</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">ETW <span>(ENERGY TRANSITION WORLD)</span></div>
+            <div class="footer-nav">
+                <a href="/">Accueil</a>
+                <a href="/#features">Avantages</a>
+                <a href="/#process">Processus</a>
+                <a href="/#pricing">Tarifs</a>
+                <a href="/#contact">Contact</a>
+            </div>
+            <div class="footer-legal">
+                <a href="/conditions-generales/">Conditions Générales</a>
+                <a href="/politique-confidentialite/">Politique de Confidentialité</a>
+                <a href="/mentions-legales/">Mentions Légales</a>
+                <a href="/politique-cookies/">Politique de Cookies</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/EnergyTransitionWorld" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/ETW_official" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/energytransitionworld/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/energy-transition-world/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="copyright">
+                © 2025 ETW (ENERGY TRANSITION WORLD). Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

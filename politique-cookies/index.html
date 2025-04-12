@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Cookies - ETW (ENERGY TRANSITION WORLD)</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00A896;
+            --secondary: #05668D;
+            --accent: #F0B500;
+            --light: #F8F9FA;
+            --dark: #212529;
+            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo-text span {
+            color: var(--secondary);
+        }
+        
+        .back-button {
+            color: var(--secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button i {
+            margin-right: 5px;
+        }
+        
+        .back-button:hover {
+            color: var(--primary);
+        }
+        
+        .content {
+            padding: 60px 0;
+        }
+        
+        .legal-content {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light);
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin: 20px 0 10px;
+        }
+        
+        p, ul, ol {
+            margin-bottom: 15px;
+            color: #495057;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+        }
+        
+        .company-info {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .info-item {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            min-width: 200px;
+        }
+        
+        .info-value {
+            color: #495057;
+        }
+        
+        footer {
+            background: #212529;
+            color: white;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .footer-logo span {
+            color: var(--primary);
+        }
+        
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        
+        .footer-nav a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-nav a:hover {
+            color: white;
+        }
+        
+        .footer-legal {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+        
+        .footer-legal a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-legal a:hover {
+            color: white;
+        }
+        
+        .footer-social {
+            margin-top: 30px;
+        }
+        
+        .social-icon {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            color: white;
+        }
+        
+        .copyright {
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+        
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .cookie-table th, 
+        .cookie-table td {
+            padding: 12px 15px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .cookie-table th {
+            background-color: var(--light);
+            font-weight: 600;
+            text-align: left;
+        }
+        
+        .cookie-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        @media (max-width: 768px) {
+            .info-item {
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+            
+            .info-label {
+                margin-bottom: 5px;
+            }
+            
+            .cookie-table {
+                font-size: 0.9rem;
+            }
+            
+            .cookie-table th, 
+            .cookie-table td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-text">ETW <span>(ENERGY TRANSITION WORLD)</span></div>
+            </div>
+            <a href="/" class="back-button">
+                <i class="fas fa-arrow-left"></i> Retour au site
+            </a>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="content">
+        <div class="container">
+            <div class="legal-content">
+                <h1>Politique de Cookies</h1>
+                
+                <div class="company-info">
+                    <div class="info-item">
+                        <div class="info-label">Dénomination sociale :</div>
+                        <div class="info-value">ETW (ENERGY TRANSITION WORLD)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Site web :</div>
+                        <div class="info-value">transitionenergy.fr</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Date de mise à jour :</div>
+                        <div class="info-value">9 avril 2025</div>
+                    </div>
+                </div>
+                
+                <h2>1. Qu'est-ce qu'un cookie ?</h2>
+                <p>Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, tablette, smartphone) lors de votre visite sur notre site web transitionenergy.fr. Les cookies nous permettent de reconnaître votre navigateur et de collecter certaines informations concernant votre utilisation de notre site, comme les pages que vous consultez, la durée de votre visite, etc.</p>
+                <p>Les cookies sont utilisés pour faciliter votre navigation sur notre site, améliorer votre expérience utilisateur, vous proposer des contenus personnalisés et nous aider à comprendre comment notre site est utilisé.</p>
+                
+                <h2>2. Types de cookies utilisés</h2>
+                <p>Sur le site transitionenergy.fr, nous utilisons différents types de cookies :</p>
+                
+                <h3>2.1 Cookies strictement nécessaires</h3>
+                <p>Ces cookies sont essentiels au fonctionnement du site. Ils vous permettent d'utiliser les fonctionnalités de base et sécurisent votre visite. Ces cookies ne peuvent pas être désactivés.</p>
+                
+                <h3>2.2 Cookies de performance et d'analyse</h3>
+                <p>Ces cookies nous permettent de collecter des informations anonymes sur l'utilisation de notre site, comme le nombre de visiteurs, les pages les plus consultées ou les sources du trafic. Ces données nous aident à améliorer le fonctionnement de notre site.</p>
+                
+                <h3>2.3 Cookies de fonctionnalité</h3>
+                <p>Ces cookies permettent au site de se souvenir des choix que vous avez effectués (comme votre nom d'utilisateur, votre langue ou la région où vous vous trouvez) et fournissent des fonctionnalités améliorées et plus personnelles.</p>
+                
+                <h3>2.4 Cookies de ciblage ou publicitaires</h3>
+                <p>Ces cookies sont utilisés pour vous présenter des publicités pertinentes en fonction de vos centres d'intérêt. Ils sont également utilisés pour limiter le nombre de fois où vous voyez une publicité et pour aider à mesurer l'efficacité des campagnes publicitaires.</p>
+                
+                <h2>3. Liste détaillée des cookies utilisés</h2>
+                <table class="cookie-table">
+                    <thead>
+                        <tr>
+                            <th>Nom du cookie</th>
+                            <th>Type</th>
+                            <th>Finalité</th>
+                            <th>Durée de conservation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PHPSESSID</td>
+                            <td>Nécessaire</td>
+                            <td>Conserve la session de l'utilisateur à travers les requêtes de page</td>
+                            <td>Session</td>
+                        </tr>
+                        <tr>
+                            <td>cookieconsent_status</td>
+                            <td>Nécessaire</td>
+                            <td>Enregistre si l'utilisateur a accepté l'utilisation des cookies</td>
+                            <td>1 an</td>
+                        </tr>
+                        <tr>
+                            <td>_ga</td>
+                            <td>Analytique</td>
+                            <td>Utilisé par Google Analytics pour distinguer les utilisateurs</td>
+                            <td>2 ans</td>
+                        </tr>
+                        <tr>
+                            <td>_gid</td>
+                            <td>Analytique</td>
+                            <td>Utilisé par Google Analytics pour distinguer les utilisateurs</td>
+                            <td>24 heures</td>
+                        </tr>
+                        <tr>
+                            <td>_gat</td>
+                            <td>Analytique</td>
+                            <td>Utilisé par Google Analytics pour limiter le taux de requêtes</td>
+                            <td>1 minute</td>
+                        </tr>
+                        <tr>
+                            <td>userPreferences</td>
+                            <td>Fonctionnel</td>
+                            <td>Stocke les préférences utilisateur pour la personnalisation du site</td>
+                            <td>6 mois</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2>4. Gestion et paramétrage des cookies</h2>
+                <p>Lors de votre première visite sur le site transitionenergy.fr, une bannière d'information vous informe de la présence de cookies et vous invite à indiquer vos préférences. Ces cookies ne sont déposés que si vous les acceptez ou que vous poursuivez votre navigation sur le site en visitant une seconde page.</p>
+                
+                <h3>4.1 Comment accepter ou refuser les cookies ?</h3>
+                <p>Vous avez la possibilité d'accepter ou de refuser les cookies à tout moment :</p>
+                <ul>
+                    <li><strong>En utilisant notre outil de gestion des cookies</strong> accessible via le bouton "Gérer mes cookies" présent en bas de chaque page du site.</li>
+                    <li><strong>En paramétrant votre navigateur</strong> pour accepter ou refuser certains cookies, ou pour être alerté lorsqu'un cookie est déposé.</li>
+                </ul>
+                
+                <h3>4.2 Comment configurer votre navigateur ?</h3>
+                <p>Chaque navigateur dispose de paramètres différents pour gérer les cookies. Voici comment procéder pour les principaux navigateurs :</p>
+                <ul>
+                    <li><strong>Google Chrome :</strong> Menu → Paramètres → Afficher les paramètres avancés → Confidentialité → Paramètres de contenu → Cookies</li>
+                    <li><strong>Firefox :</strong> Menu → Options → Vie privée → Historique → Paramètres pour l'historique → Cookies</li>
+                    <li><strong>Internet Explorer :</strong> Menu → Options Internet → Onglet Confidentialité → Paramètres de confidentialité</li>
+                    <li><strong>Safari :</strong> Menu Safari → Préférences → Confidentialité → Cookies et données de site</li>
+                    <li><strong>Microsoft Edge :</strong> Menu → Paramètres → Confidentialité et sécurité → Cookies</li>
+                </ul>
+                <p>Notez que le rejet des cookies peut limiter votre expérience utilisateur et vous empêcher d'utiliser certaines fonctionnalités de notre site.</p>
+                
+                <h2>5. Conséquences du refus des cookies</h2>
+                <p>Si vous choisissez de refuser les cookies, vous pourrez toujours utiliser notre site, mais certaines fonctionnalités pourraient être limitées ou indisponibles, comme :</p>
+                <ul>
+                    <li>La personnalisation de votre expérience (préférences, contenu adapté...)</li>
+                    <li>Certaines fonctionnalités interactives</li>
+                    <li>L'enregistrement des informations de formulaire pour faciliter les futures visites</li>
+                </ul>
+                
+                <h2>6. Durée de conservation des cookies</h2>
+                <p>Les cookies déposés par ETW (ENERGY TRANSITION WORLD) ou nos prestataires sont conservés pour une durée maximale de 13 mois à compter de leur dépôt sur votre terminal. À l'expiration de ce délai, votre consentement sera à nouveau recueilli.</p>
+                
+                <h2>7. Modifications de la politique de cookies</h2>
+                <p>Nous nous réservons le droit de modifier cette politique de cookies à tout moment. Toute modification prendra effet immédiatement. Nous vous informerons de tout changement important via une notification sur notre site.</p>
+                
+                <h2>8. Contact</h2>
+                <p>Pour toute question concernant notre politique de cookies, vous pouvez nous contacter par email à l'adresse suivante : rgpd@transitionenergy.fr.</p>
+                
+                <p class="last-update">Dernière mise à jour : 9 avril 2025</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">ETW <span>(ENERGY TRANSITION WORLD)</span></div>
+            <div class="footer-nav">
+                <a href="/">Accueil</a>
+                <a href="/#features">Avantages</a>
+                <a href="/#process">Processus</a>
+                <a href="/#pricing">Tarifs</a>
+                <a href="/#contact">Contact</a>
+            </div>
+            <div class="footer-legal">
+                <a href="/conditions-generales/">Conditions Générales</a>
+                <a href="/politique-confidentialite/">Politique de Confidentialité</a>
+                <a href="/mentions-legales/">Mentions Légales</a>
+                <a href="/politique-cookies/">Politique de Cookies</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/EnergyTransitionWorld" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/ETW_official" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/energytransitionworld/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/energy-transition-world/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="copyright">
+                © 2025 ETW (ENERGY TRANSITION WORLD). Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
